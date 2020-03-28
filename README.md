@@ -1,4 +1,4 @@
-# vue-cli で SPA を作ってみる
+# vue-cli で Counter とか SPA を作ってみる
 # vue-cli インストール
 ```
 npm install -g @vue/cli
@@ -113,3 +113,19 @@ by default): (Use arrow keys)
  $ npm run serve
 ```
 - ブラウザから http://localhost:8080/ にアクセスして、動作確認
+
+## import する際の path alias 設定
+- プロジェクト直下に vue.config.js を作成
+```
+const path = require('path')
+
+module.exports = {
+    configureWebpack: {
+        resolve: {
+          alias: {
+            '@': path.join(__dirname, '/src')
+          }
+        }
+    }
+}
+```
