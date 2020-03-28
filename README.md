@@ -129,3 +129,6 @@ module.exports = {
     }
 }
 ```
+
+## カウンター Qiita D3 アプリ作成
+- https://github.com/warlock-mw/vue-test/tree/vuex-and-vue-router ここからコピって動かす
